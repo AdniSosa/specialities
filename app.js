@@ -60,54 +60,51 @@ app.get('/', (req, res) => {
 
 
 app.get('/marketing', (req, res) => {
-    const marketingSpecialist = marketingUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}, Especialidad: ${user.specialty}</li>`).join('');
+    const marketingSpecialist = marketingUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}</li>`).join('');
     //console.log(marketingSpecialist);
     res.send(
         `
         <h1>Especialistas en Marketing</h1>
-        <ul style="list-style-type: none;">
-            <li><a href="/" >Volver a home</a></li>
-        </ul>
-        <ol style="line-height: 25px">${marketingSpecialist}</ol>`
+        <h2>Número de especialistas: ${marketingUsers.length}</h2>
+        <a href="/" >Volver a home</a>
+        <ul style="line-height: 25px">${marketingSpecialist}</ul>`
     )
 })
 
 app.get('/developer', (req, res) => {
-    const developerSpecialist = developersUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}, Especialidad: ${user.specialty}</li>`).join('');
+    const developerSpecialist = developersUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}</li>`).join('');
     //console.log(developersUsers);
     res.send(
         `
         <h1>Especialistas en Desarrollo Web</h1>
-        <ul style="list-style-type: none;">
-            <li><a href="/" >Volver a home</a></li>
-        </ul>
-        <ol style="line-height: 25px">${developerSpecialist}</ol>`
+        <h2>Número de especialistas: ${developersUsers.length}</h2>
+        <a href="/" >Volver a home</a>
+        <ul style="line-height: 25px">${developerSpecialist}</ul>`
     )
 })
 
 app.get('/qas', (req, res) => {
-    const qasSpecialist = qasUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}, Especialidad: ${user.specialty}</li>`).join('');
+    const qasSpecialist = qasUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}</li>`).join('');
 
     res.send(
         `
         <h1>Especialistas en QA</h1>
-        <ul style="list-style-type: none;">
-            <li><a href="/" >Volver a home</a></li>
-        </ul>
-        <ol style="line-height: 25px">${qasSpecialist}</ol>`
+        <h2>Número de especialistas: ${qasUsers.length}</h2>
+        <a href="/" >Volver a home</a>
+        <ul style="line-height: 25px">${qasSpecialist}</ul>`
     )
 })
 
 app.get('/ventas', (req, res) => {
-    const saleSpecialist = saleUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}, Especialidad: ${user.specialty}</li>`).join('');
+    const saleSpecialist = saleUsers.map(user => `<li>Nombre: ${user.name}, Edad: ${user.age}</li>`).join('');
 
     res.send(
         `
         <h1>Especialistas en QA</h1>
-        <ul style="list-style-type: none;">
-            <li><a href="/" >Volver a home</a></li>
-        </ul>
-        <ol style="line-height: 25px">${saleSpecialist}</ol>`
+        <h2>Número de especialistas: ${saleUsers.length}</h2>
+        <a href="/" >Volver a home</a>
+        
+        <ul style="line-height: 25px">${saleSpecialist}</ul>`
     )
 })
 
