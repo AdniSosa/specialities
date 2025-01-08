@@ -64,10 +64,21 @@ app.get('/marketing', (req, res) => {
     //console.log(marketingSpecialist);
     res.send(
         `
-        <h1>Especialistas en Marketing</h1>
-        <h2>Número de especialistas: ${marketingUsers.length}</h2>
-        <a href="/" >Volver a home</a>
-        <ul style="line-height: 25px">${marketingSpecialist}</ul>`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Especialistas en Marketing</h1>
+            <h2>Número de especialistas: ${marketingUsers.length}</h2>
+            <a href="/" >Volver a home</a>
+            <ul style="line-height: 25px">${marketingSpecialist}</ul>
+        </body>
+        </html>
+`
     )
 })
 
@@ -76,10 +87,21 @@ app.get('/developer', (req, res) => {
     //console.log(developersUsers);
     res.send(
         `
-        <h1>Especialistas en Desarrollo Web</h1>
-        <h2>Número de especialistas: ${developersUsers.length}</h2>
-        <a href="/" >Volver a home</a>
-        <ul style="line-height: 25px">${developerSpecialist}</ul>`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Especialistas en Desarrollo Web</h1>
+            <h2>Número de especialistas: ${developersUsers.length}</h2>
+            <a href="/" >Volver a home</a>
+            <ul style="line-height: 25px">${developerSpecialist}</ul>
+        </body>
+        </html>
+        `
     )
 })
 
@@ -88,10 +110,21 @@ app.get('/qas', (req, res) => {
 
     res.send(
         `
-        <h1>Especialistas en QA</h1>
-        <h2>Número de especialistas: ${qasUsers.length}</h2>
-        <a href="/" >Volver a home</a>
-        <ul style="line-height: 25px">${qasSpecialist}</ul>`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Especialistas en QA</h1>
+            <h2>Número de especialistas: ${qasUsers.length}</h2>
+            <a href="/" >Volver a home</a>
+            <ul style="line-height: 25px">${qasSpecialist}</ul>>
+        </body>
+        </html>
+        `
     )
 })
 
@@ -100,11 +133,21 @@ app.get('/ventas', (req, res) => {
 
     res.send(
         `
-        <h1>Especialistas en QA</h1>
-        <h2>Número de especialistas: ${saleUsers.length}</h2>
-        <a href="/" >Volver a home</a>
-        
-        <ul style="line-height: 25px">${saleSpecialist}</ul>`
+       <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Especialistas en QA</h1>
+            <h2>Número de especialistas: ${saleUsers.length}</h2>
+            <a href="/" >Volver a home</a>
+            <ul style="line-height: 25px">${saleSpecialist}</ul>
+        </body>
+        </html>
+        `
     )
 })
 
