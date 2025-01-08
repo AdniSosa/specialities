@@ -121,7 +121,7 @@ app.get('/qas', (req, res) => {
             <h1>Especialistas en QA</h1>
             <h2>Número de especialistas: ${qasUsers.length}</h2>
             <a href="/" >Volver a home</a>
-            <ul style="line-height: 25px">${qasSpecialist}</ul>>
+            <ul style="line-height: 25px">${qasSpecialist}</ul>
         </body>
         </html>
         `
